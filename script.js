@@ -55,7 +55,10 @@ document.addEventListener("keydown", function (event) {
   } else if (event.key == "/") {
     text.textContent += "÷";
     screenActual += "/";
-  } else if (event.key == "c") {
+  } else if (event.key == "*") {
+    text.textContent += "x";
+    screenActual += "*";
+  } else if (event.key == "c" || event.key == "Escape") {
     clr();
   }
 });
